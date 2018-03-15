@@ -1,3 +1,4 @@
+```Shell
 del c:\Windows\Temp /S /Q
 del "%UserProfile%\AppData\Local\Temp" /S /Q
 
@@ -22,5 +23,6 @@ FOR /D %%p IN ("c:\Portal\OS33.Api-Production\TestResults\*.*") DO rmdir "%%p" /
 FOR /D %%p IN ("c:\Portal\OS33.Api\TestResults\*.*") DO rmdir "%%p" /s /q
 rem pause
 
-
+#! cleanup image!
 dism.exe /online /cleanup-image  /StartComponentCleanup
+```
